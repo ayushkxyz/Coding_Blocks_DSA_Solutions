@@ -7,14 +7,11 @@ void bubble_sort(int arr[],int n){
       int j=0;
     while(j<n-1){
       if(arr[j]>arr[j+1]){
-        int temp=arr[j+1];
-        arr[j+1]=arr[j];
-        arr[j]=temp;
-        j++;
+        swap(arr[j],arr[j+1]);
+        
       }
-      else if(arr[j]<arr[j+1]){
-         j++;
-      }
+      j++;
+       
          }
                n--;
   
