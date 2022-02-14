@@ -26,8 +26,12 @@ void insert_end(node* &head){
        }
 }
 void insert_mid(node*&head,int elem,int pos){
-      node*n=new node(elem);
+  node*n=new node(elem);
       node*temp=head;
+          if(head==NULL){
+             return ;
+            }
+     
             if(pos==0){
                 n->next=head;
                 head=n;
